@@ -1,0 +1,13 @@
+/* CSS Document */
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body #barra{
+	height: 100px;
+	width:auto;
+	background-color:#000686;
+	margin-bottom: 80px;
+}

@@ -1,14 +1,16 @@
 <!doctype html>
-<html>
+<html><!-- InstanceBegin template="/Templates/P_admin.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
-<!-- TemplateBeginEditable name="doctitle" -->
+<!-- InstanceBeginEditable name="doctitle" -->
 <title>Laboratorio de redes</title>
-<!-- TemplateEndEditable -->
-<!-- TemplateBeginEditable name="head" -->
-		<link rel="stylesheet" href="../Estilos/menu.css">
-		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<!-- TemplateEndEditable -->
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+	<link rel="stylesheet" href="./Estilos/menu.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+<!-- InstanceEndEditable -->
 </head>
 
 <body>	
@@ -31,4 +33,4 @@
 		
 	</div>
 </body>
-</html>
+<!-- InstanceEnd --></html>

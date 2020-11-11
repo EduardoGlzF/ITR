@@ -1,0 +1,28 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body #logos{
+	height: 100px;
+	width:auto;
+	background-color:#000686;
+	margin-bottom: 80px;
+}
+
+#itrLogo{
+	margin-left: 20px;
+	float: left;
+	
+}
+
+#tecnmLogo{
+	margin-right: 20px;
+	float: right;
+}
+
+#loginDiv{
+	align-content: center;
+	margin-top: 100px;
+		
+}
