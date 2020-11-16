@@ -1,4 +1,4 @@
-<?php require_once('../conexion/conexionbd.php'); ?>
+<?php require_once('../Conexion/conBD.php'); ?>
 <?php
 
 

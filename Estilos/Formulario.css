@@ -1,0 +1,85 @@
+/* CSS Document */
+#container{
+	padding-left: 300px;	
+	
+	align-items: center;
+}
+
+#titulo{
+	padding-top: 50px;
+	padding-bottom: 5px;
+}
+
+.form_reg{
+	width: 450px;
+	margin-left: 150px;
+}
+
+.form_reg h1{
+	color: black;
+}
+
+hr{
+	border: 0;
+	background: #ccc;
+	height: 1px;
+	margin: 10px 0;
+	display: block;
+}
+
+form{
+	background: #000686;
+	margin: auto;
+	padding: 20px 50px;
+	border: 1px solid #d1d1d1;
+}
+
+label{
+	display: block;
+	font-size: 12pt;
+	
+	color: white;
+}
+
+input, select{
+	display: block;
+	width: 100%;
+	font-size: 11pt;
+	padding: 5px;
+	border:1px solid #89929e;
+	border-radius: 5px;
+}
+
+
+.btnSend{
+	font-size: 12px;
+	padding: 10px;
+	width: 100px;
+	letter-spacing: 1px;
+	border: 0;
+	cursor: pointer;
+	margin: 15px auto;
+	
+}
+.alert{
+	width: 100%;
+	background: #E9E223;
+	border-radius: 6px;
+	margin: 20px auto;
+}
+
+.msg_error{
+	background:#AD1E20; 
+	color: white;
+}
+
+.msg_save{
+	background:#187C3D;
+	color: white;
+}
+
+.alert p{
+	padding: 10px;
+}
+
+
