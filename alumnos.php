@@ -25,6 +25,7 @@
 					<li><a href="#">Maestros</a></li>
 					<li><a href="#">Clases</a></li>
 					<li><a href="#">Asistencias</a></li>
+					<li><a href="#">Salas</a></li>
 					<li><a href="#">Inventarios</a></li>
 					<li><a href="#">Salir</a></li>
 				</ul>
@@ -75,7 +76,7 @@
 					<td>
 					<a class="link_edit" href="alumnosEdit.php?id=<?php echo $data["numCtrl"];?>">Editar</a> | 
 						 
-						<a class="link_delete" href="#">Eliminar</a>
+					<a class="link_delete" href="alumnosBorrar.php?id=<?php echo $data["numCtrl"];?>">Eliminar</a>
 
 					</td>
 					

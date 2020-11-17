@@ -1,0 +1,40 @@
+/* CSS Document */
+
+#container{
+	padding-left: 300px;	
+	
+	align-items: center;
+}
+
+.dataDelete{
+	padding-top: 50px;
+}
+
+.dataDelete span{
+	font-weight: bold;
+	color: blue;
+	
+}
+
+.btnCancel{
+	width: 124px;
+	background:#EB0003;
+	color: white;
+	display:inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px;
+}
+
+.btnOk{
+	width: 124px;
+	background:#188E0B;
+	color: white;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px;
+}
+
