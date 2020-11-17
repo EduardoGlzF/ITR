@@ -25,23 +25,23 @@
 	
 	<img src="/Imagenes/tecnmLogo.png", id="tecnmLogo", height="80", width="110">
 	</div>
-	
-	<div id="loginDiv", >
-		
-		<h1>Ingrese sus credenciales para acceso</h1>
-		<br>
-		<br>
-		
-		<form action="./Conexiones/loginCon.php" method="POST">
-	
-			<input type="text" name="user", placeholder="Usuario">
+	<center>
+		<div id="loginDiv", >
+
+			<h1>Ingrese sus credenciales para acceso</h1>
 			<br>
 			<br>
-			<input type="password" name="pass", placeholder="Contraseña">
-			<br>
-			<br>
-			<button type="submit">Entrar</button>
-	</div>
+
+			<form action="./Conexiones/loginCon.php" method="POST">
+
+				<input type="text" name="user", placeholder="Usuario">
+				<br>
+				<br>
+				<input type="password" name="pass", placeholder="Contraseña">
+				<br>
+				<br>
+				<button type="submit">Entrar</button>
+		</div>
 		
 		</form>
 	</center>

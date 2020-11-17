@@ -6,10 +6,8 @@
 <title>Laboratorio de redes</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
-	<link rel="stylesheet" href="./Estilos/menu.css">
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-
+		<link rel="stylesheet" href="Estilos/menu.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -30,8 +28,6 @@
 				</ul>
 	</div>	
 	<!-- InstanceBeginEditable name="body" -->
-
-	
 	<!-- InstanceEndEditable -->
 
 	

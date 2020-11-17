@@ -20,7 +20,7 @@
 	</label>
 	<div class="sideBar">	
 				<ul>
-					<li><a href="#">Inicio</a></li>
+					<li><a href="home.php" >Inicio</a></li>
 					<li><a href="alumnos.php">Alumnos</a></li>
 					<li><a href="#">Maestros</a></li>
 					<li><a href="#">Clases</a></li>
@@ -45,6 +45,7 @@
 				<tr>
 					<th>Numero Ctrl</th>
 					<th>Nombre</th>
+					<th>Carrera</th>
 					<th>Teléfono</th>
 					<th>Email</th>
 					<th>Semestre</th>
@@ -64,14 +65,16 @@
 			 ?>
 				<!-- Estructura de tabla-->
 				<tr>
-					<td><?php echo $data["numCtrl"]?></td>
-					<td><?php echo $data["nombre"]?></td>
-					<td><?php echo $data["telefono"]?></td>
-					<td><?php echo $data["email"]?></td>
-					<td><?php echo $data["semestre"]?></td>
-					<td><?php echo $data["edad"]?></td>
+					<td><?php echo $data["numCtrl"];?></td>
+					<td><?php echo $data["nombre"];?></td>
+					<td><?php echo $data["carrera"];?></td>
+					<td><?php echo $data["telefono"];?></td>
+					<td><?php echo $data["email"];?></td>
+					<td><?php echo $data["semestre"];?></td>
+					<td><?php echo $data["edad"];?></td>
 					<td>
-						<a class="link_edit" href="#">Editar</a> | 
+					<a class="link_edit" href="alumnosEdit.php?id=<?php echo $data["numCtrl"];?>">Editar</a> | 
+						 
 						<a class="link_delete" href="#">Eliminar</a>
 
 					</td>

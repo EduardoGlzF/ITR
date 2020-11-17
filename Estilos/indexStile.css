@@ -11,17 +11,19 @@ body #logos{
 }
 
 #itrLogo{
+	margin-top: 12px;
 	margin-left: 20px;
 	float: left;
 	
 }
 
 #tecnmLogo{
+	margin-top: 12px;
 	margin-right: 20px;
 	float: right;
 }
 
-#loginDiv{
+body #loginDiv{
 	align-content: center;
 	margin-top: 100px;
 		

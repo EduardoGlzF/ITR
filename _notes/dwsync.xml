@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="index.php" server="tecreytics.com" local="132496031647929464" remote="132496459800000000" Dst="1" />
-<file name="home.php" server="tecreytics.com" local="132498870515551643" remote="132499875600000000" Dst="1" />
-<file name="alumnos.php" server="tecreytics.com" local="132498870515521665" remote="132499875600000000" Dst="1" />
-<file name="alumnosReg.php" server="tecreytics.com" local="132499700932054252" remote="132499918200000000" Dst="1" />
+<file name="index.php" server="tecreytics.com" local="132499739928229723" remote="132499956000000000" Dst="1" />
+<file name="home.php" server="tecreytics.com" local="132499715568544689" remote="132499932600000000" Dst="1" />
+<file name="alumnos.php" server="tecreytics.com" local="132500993079383910" remote="132501208800000000" Dst="1" />
+<file name="alumnosReg.php" server="tecreytics.com" local="132500114603712427" remote="132500332200000000" Dst="1" />
+<file name="alumnosEdit.php" server="tecreytics.com" local="132500990943930135" remote="132501206400000000" Dst="1" />
+<file name="alumnosBorrar.php" server="tecreytics.com" local="132501057471365390" remote="132501273600000000" Dst="1" />
 </dwsync>

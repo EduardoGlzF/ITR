@@ -1,4 +1,4 @@
-/* CSS Document */
+/* CSS Document formularios*/
 #container{
 	padding-left: 300px;	
 	
@@ -27,7 +27,7 @@ hr{
 	display: block;
 }
 
-form{
+form{ /*formulario*/
 	background: #000686;
 	margin: auto;
 	padding: 20px 50px;
@@ -51,7 +51,7 @@ input, select{
 }
 
 
-.btnSend{
+.btnSend{ /* boton de envio de formulario*/
 	font-size: 12px;
 	padding: 10px;
 	width: 100px;
@@ -61,19 +61,19 @@ input, select{
 	margin: 15px auto;
 	
 }
-.alert{
+.alert{ 
 	width: 100%;
 	background: #E9E223;
 	border-radius: 6px;
 	margin: 20px auto;
 }
 
-.msg_error{
+.msg_error{ /* mensage de error al registrar*/
 	background:#AD1E20; 
 	color: white;
 }
 
-.msg_save{
+.msg_save{ /* mensage al registrar correctamente */
 	background:#187C3D;
 	color: white;
 }

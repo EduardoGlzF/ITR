@@ -6,11 +6,12 @@
 <title>Laboratorio de redes</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
-	<link rel="stylesheet" href="Estilos/menu.css"><!--Estilos para sideBar-->
+		<link rel="stylesheet" href="Estilos/menu.css"><!--Estilos para sideBar-->
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script><!--Estilos de slideBar -->
 	<link rel="stylesheet" href="Estilos/Formulario.css">
-    <?php include'Conexiones/alumnoAdd.php'; ?>
-	<!-- InstanceEndEditable -->
+	    <?php include'Conexiones/editAlumno.php'; ?>
+
+<!-- InstanceEndEditable -->
 </head>
 <body>
 	<input type="checkbox" id="check">
@@ -30,13 +31,11 @@
 				</ul>
 	</div>	
 	<!-- InstanceBeginEditable name="body" -->
-			
 	
-		
-			<section id="container">
+		<section id="container">
 			  <div class="form_reg">	
 				
-				<h1 id="titulo">Registro de alumnos</h1> <!-- Encabezado-->
+				<h1 id="titulo">Actualizar alumno</h1> <!-- Encabezado-->
 				<hr>
 				
 				<div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div> 
@@ -44,29 +43,36 @@
 					<form action="" method="post">
 						
 		<!--Texto-->	<label for="numctrl">Numero de control</label> 
-		<!--Textbox-->	<input type="text" name="numctrl" id="numctrl" placeholder="Numero de control">
+		<!--Textbox-->	<input type="text" name="numctrl" id="numctrl" placeholder="Numer de control"
+							  value="<?php echo $numCtrl?>">
 						
 						
 						<label for="nombre">Nombre</label>
-						<input type="text" name="nombre" id="nombre" placeholder="Nombre completo">	
+						<input type="text" name="nombre" id="nombre" placeholder="Nombre completo"
+							    value="<?php echo $nombre?>">	
 						
 						<label for="carrera">Carrera</label>
-						<input type="text" name="carrera" id="carrera" placeholder="Carrera">						
+						<input type="text" name="carrera" id="carrera" placeholder="Carrera"
+							    value="<?php echo $carrera?>">						
 						
 						<label for="telefono">Teléfono</label>
-						<input type="text" name="telefono" id="telefono" placeholder="Teléfono">	
+						<input type="text" name="telefono" id="telefono" placeholder="Teléfono"
+							    value="<?php echo $telefono ?>">	
 
 						
 						<label for="email">Email</label>
-						<input type="text" name="email" id="email" placeholder="Email">
+						<input type="text" name="email" id="email" placeholder="Email"
+							    value="<?php echo $email?>">
 						
 						
 						<label for="semestre">Semestre</label>
-						<input type="text" name="semestre" id="semestre" placeholder="Semestre">	
+						<input type="text" name="semestre" id="semestre" placeholder="Semestre"
+							    value="<?php echo $semestre?>">	
 						
 						
 						<label for="edad">Edad</label>
-						<input type="text" name="edad" id="edad" placeholder="Edad">
+						<input type="text" name="edad" id="edad" placeholder="Edad"
+							    value="<?php echo $edad?>">
 						<br>
 						<br>
 
@@ -75,8 +81,8 @@
 					</form>		
 				</div>
 			</section>
-
-
+	
+	
 	<!-- InstanceEndEditable -->
 
 	
