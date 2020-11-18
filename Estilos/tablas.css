@@ -1,6 +1,8 @@
 #container{
 	padding-left: 280px;	
 	align-items: center;
+	
+
 }
 
 .btn_new{
@@ -12,20 +14,33 @@
 	margin: 20px;
 }
 
-table{
-	border-collapse: collapse;
-	font-size: 12pt;
-	width: 90%;
+.tableCont{
+ 	max-height: 400px;
+	overflow-y: scroll;
 }
 
-table th{
+
+table{
+	border-collapse:collapse;
+	font-size: 12pt;
+	width: 90%;
+	height: 60%;
+	
+}
+
+table th{ /*color de cabecera*/
 	text-align: left;
 	padding: 5px;
 	background: #000686;
 	color: #FFF;
 }
 
-table tr:nth-child(odd){
+table .sticky{ /*clase para cabecera dija*/
+	position: sticky;
+	top:0;
+}
+
+table tr:nth-child(odd){ /*efecto zebra*/
     background-color: #CCCCCC;
 }
 
@@ -33,7 +48,7 @@ table td{
     padding:10px;
 }
 
- .link_edit{
+ .link_edit{ 
      color: green;
  }
  

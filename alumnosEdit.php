@@ -23,7 +23,7 @@
 				<ul>
 					<li><a href="home.php" >Inicio</a></li>
 					<li><a href="alumnos.php">Alumnos</a></li>
-					<li><a href="#">Maestros</a></li>
+					<li><a href="maestros.php">Maestros</a></li>
 					<li><a href="#">Clases</a></li>
 					<li><a href="#">Asistencias</a></li>
 					<li><a href="#">Salas</a></li>
