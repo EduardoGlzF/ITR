@@ -6,11 +6,11 @@
 <title>Laboratorio de redes</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
-		<link rel="stylesheet" href="Estilos/menu.css"><!--Estilos para sideBar-->
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script><!--Estilos de slideBar -->
-	<link rel="stylesheet" href="Estilos/Formulario.css">
-	    <?php include'Conexiones/editAlumno.php'; ?>
+		<link rel="stylesheet" href="Estilos/menu.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link rel="stylesheet" href="Estilos/Formulario.css">
 
+		 <?php include'Conexiones/editMaestro.php'; ?>
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -34,47 +34,38 @@
 	</div>	
 	<!-- InstanceBeginEditable name="body" -->
 	
-		<section id="container">
+			<section id="container">
 			  <div class="form_reg">	
 				
-				<h1 id="titulo">Actualizar alumno</h1> <!-- Encabezado-->
+				<h1 id="titulo">Actualizar maestro</h1> <!-- Encabezado-->
 				<hr>
 				
 				<div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div> 
 				<!-- Formulario -->
 					<form action="" method="post">
 						
-		<!--Texto-->	<label for="numctrl">Numero de control</label> 
-		<!--Textbox-->	<input type="text" name="numctrl" id="numctrl" placeholder="Numer de control"
-							  value="<?php echo $numCtrl?>">
+		<!--Texto-->	<label for="cedula">Cedula</label> 
+		<!--Textbox-->	<input type="text" name="cedula" id="cedula" placeholder="Cedula"
+							  value="<?php echo $cedula?>">
 						
 						
 						<label for="nombre">Nombre</label>
 						<input type="text" name="nombre" id="nombre" placeholder="Nombre completo"
 							    value="<?php echo $nombre?>">	
 						
-						<label for="carrera">Carrera</label>
-						<input type="text" name="carrera" id="carrera" placeholder="Carrera"
-							    value="<?php echo $carrera?>">						
-						
-						<label for="telefono">Teléfono</label>
-						<input type="text" name="telefono" id="telefono" placeholder="Teléfono"
-							    value="<?php echo $telefono ?>">	
-
-						
 						<label for="email">Email</label>
 						<input type="text" name="email" id="email" placeholder="Email"
-							    value="<?php echo $email?>">
+							    value="<?php echo $email?>">						
 						
+						<label for="user">User</label>
+						<input type="text" name="user" id="user" placeholder="User"
+							    value="<?php echo $user ?>">	
+
 						
-						<label for="semestre">Semestre</label>
-						<input type="text" name="semestre" id="semestre" placeholder="Semestre"
-							    value="<?php echo $semestre?>">	
-						
-						
-						<label for="edad">Edad</label>
-						<input type="text" name="edad" id="edad" placeholder="Edad"
-							    value="<?php echo $edad?>">
+						<label for="pass">Password</label>
+						<input type="password" name="pass" id="pass" placeholder="Password"
+							    value="<?php echo $password?>">
+				
 						<br>
 						<br>
 
@@ -83,8 +74,6 @@
 					</form>		
 				</div>
 			</section>
-	
-	
 	<!-- InstanceEndEditable -->
 
 	

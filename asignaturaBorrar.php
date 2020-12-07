@@ -32,16 +32,17 @@
 				</ul>
 	</div>	
 	<!-- InstanceBeginEditable name="body" -->
-	<?php
+	
+			<?php
 				if(!empty($_POST)){
 					include("Conexiones/conBd.php");
 
-					$numCtrl = $_POST['id'];
+					$id = $_POST['id'];
 					
-					$queryDelete=mysqli_query($conn,"DELETE FROM alumnos WHERE numCtrl = '$numCtrl'");
+					$queryDelete=mysqli_query($conn,"DELETE FROM asignatura WHERE id = '$id'");
 					
 					if($queryDelete){
-						header("Location: alumnos.php");
+						header("Location: asignatura.php");
 					}else{
 						echo("No se ha podido eliminar");
 					}
@@ -51,22 +52,22 @@
 	
 				if (empty($_REQUEST['id'])){
 					
-					header("Location: alumnos.php");
+					header("Location: asignatura.php");
 				}else{
 					
 					include("Conexiones/conBd.php");
-					$numCtrl=$_REQUEST['id'];
-					$query=mysqli_query($conn,"SELECT numCtrl, nombre FROM alumnos WHERE numCtrl='$numCtrl'");
+					$id=$_REQUEST['id'];
+					$query=mysqli_query($conn,"SELECT id, nombre FROM asignatura WHERE id='$id'");
 					
 					$result=mysqli_num_rows($query);
 					
 					if($result>0){
 						while($data = mysqli_fetch_array($query)){
-						$numCtrl=$data['numCtrl'];
+						$id=$data['id'];
 						$nombre=$data['nombre'];
 						}
 					}else{
-						header("Location alumnos.php");
+						header("Location asignatura.php");
 					}
 				}
 			
@@ -74,17 +75,17 @@
 	
 	<section id="container">
 		<div class="dataDelete">
-		<h1>Eliminar usuario</h1>
+		<h1>Eliminar la asignatura</h1>
 		<br>
-		<h2>¿Desea eliminar el siguiente usuario</h2>
+		<h2>¿Desea eliminar la asignatura</h2>
 		<br>
-		<p>Numero de control: <span><?php echo $numCtrl;?></span></p>
+		<p>ID: <span><?php echo $id;?></span></p>
 		<p>Nombre: <span><?php echo $nombre;?></span></p>
 		
 		
 		<form method="post" action="">
-			<input type="hidden" name="numCtrl" value="<?php echo $numCtrl;?>">
-			<a href="alumnos.php" class="btnCancel">Cancelar</a>
+			<input type="hidden" name="id" value="<?php echo $id;?>">
+			<a href="asignatura.php" class="btnCancel">Cancelar</a>
 			<input type ="submit" value="Aceptar" class="btnOk">	
 		
 		</form>

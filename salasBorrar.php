@@ -8,7 +8,7 @@
 <!-- InstanceBeginEditable name="head" -->
 		<link rel="stylesheet" href="Estilos/menu.css">
 		<link rel="stylesheet" href="Estilos/mnj.css">
-
+	
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <!-- InstanceEndEditable -->
 </head>
@@ -32,16 +32,17 @@
 				</ul>
 	</div>	
 	<!-- InstanceBeginEditable name="body" -->
-	<?php
+	
+		<?php
 				if(!empty($_POST)){
 					include("Conexiones/conBd.php");
 
-					$numCtrl = $_POST['id'];
+					$id = $_POST['id'];
 					
-					$queryDelete=mysqli_query($conn,"DELETE FROM alumnos WHERE numCtrl = '$numCtrl'");
+					$queryDelete=mysqli_query($conn,"DELETE FROM sala WHERE id = '$id'");
 					
 					if($queryDelete){
-						header("Location: alumnos.php");
+						header("Location: salas.php");
 					}else{
 						echo("No se ha podido eliminar");
 					}
@@ -51,22 +52,22 @@
 	
 				if (empty($_REQUEST['id'])){
 					
-					header("Location: alumnos.php");
+					header("Location: salas.php");
 				}else{
 					
 					include("Conexiones/conBd.php");
-					$numCtrl=$_REQUEST['id'];
-					$query=mysqli_query($conn,"SELECT numCtrl, nombre FROM alumnos WHERE numCtrl='$numCtrl'");
+					$id=$_REQUEST['id'];
+					$query=mysqli_query($conn,"SELECT id, ubicacion FROM sala WHERE id='$id'");
 					
 					$result=mysqli_num_rows($query);
 					
 					if($result>0){
 						while($data = mysqli_fetch_array($query)){
-						$numCtrl=$data['numCtrl'];
-						$nombre=$data['nombre'];
+						$id=$data['id'];
+						$ubicacion=$data['ubicacion'];
 						}
 					}else{
-						header("Location alumnos.php");
+						header("Location salas.php");
 					}
 				}
 			
@@ -78,20 +79,19 @@
 		<br>
 		<h2>¿Desea eliminar el siguiente usuario</h2>
 		<br>
-		<p>Numero de control: <span><?php echo $numCtrl;?></span></p>
-		<p>Nombre: <span><?php echo $nombre;?></span></p>
+		<p>Numero de control: <span><?php echo $id;?></span></p>
+		<p>Nombre: <span><?php echo $ubicacion;?></span></p>
 		
 		
 		<form method="post" action="">
-			<input type="hidden" name="numCtrl" value="<?php echo $numCtrl;?>">
-			<a href="alumnos.php" class="btnCancel">Cancelar</a>
+			<input type="hidden" name="id" value="<?php echo $id;?>">
+			<a href="salas.php" class="btnCancel">Cancelar</a>
 			<input type ="submit" value="Aceptar" class="btnOk">	
 		
 		</form>
 		</div>
  
 	</section>
-	
 	<!-- InstanceEndEditable -->
 
 	

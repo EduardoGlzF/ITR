@@ -6,10 +6,9 @@
 <title>Laboratorio de redes</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
-		<link rel="stylesheet" href="Estilos/menu.css">
-		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link rel="stylesheet" href="Estilos/menu.css"><!--Estilos para sideBar-->
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script><!--Estilos de slideBar -->
 		<link rel="stylesheet" href="Estilos/tablas.css"><!--Estilos de tabla-->
-
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -32,30 +31,32 @@
 				</ul>
 	</div>	
 	<!-- InstanceBeginEditable name="body" -->
+	
 		<section id="container">
 			<br>
-			<h1>Lista de maestros</h1>
+			<h1>Lista de asignaturas</h1>
 			<br>
 			<!--Boton para agregar usuarios -->
-			<a href="/maestrosReg.php" class="btn_new">Agregar usuario</a>
+			<a href="/asignaturaReg.php" class="btn_new">Agregar asignatura</a>
 			<br>
 			
 		<div class="tableCont">	
 			<table>
 				<!--encabezados de tabla-->
 				<tr>
-					<th class="sticky">Cedula</th>
+					<th class="sticky">ID</th>
 					<th class="sticky">Nombre</th>
-					<th class="sticky">Email</th>
-					<th class="sticky">User</th>
+					<th class="sticky">Descripción</th>
+					<th class="sticky">Creditos</th>
 					<th class="sticky">Acciones</th>
+
 					
 				</tr>
 			<?php
 				//Conexion a la BD y consulta de alumnos
 				require 'Conexiones/conBD.php'; 
 				
-				$query = mysqli_query($conn, "SELECT * FROM maestros");
+				$query = mysqli_query($conn, "SELECT * FROM asignatura");
 				
 				$result = mysqli_num_rows($query);
 				if($result>0){
@@ -64,16 +65,15 @@
 			 ?>
 				<!-- Estructura de tabla-->
 				<tr>
-					<td><?php echo $data["cedula"];?></td>
+					<td><?php echo $data["id"];?></td>
 					<td><?php echo $data["nombre"];?></td>
-					<td><?php echo $data["email"];?></td>
-					<td><?php echo $data["user"];?></td>
-					
+					<td><?php echo $data["descripcion"];?></td>
+					<td><?php echo $data["creditos"];?></td>
 					
 					<td>
-					<a class="link_edit" href="maestrosEdit.php?cedula=<?php echo $data["cedula"];?>">Editar</a> | 
+					<a class="link_edit" href="asignaturaEdit.php?id=<?php echo $data["id"];?>">Editar</a> | 
 						 
-					<a class="link_delete" href="maestrosBorrar.php?cedula=<?php echo $data["cedula"];?>">Eliminar</a>
+					<a class="link_delete" href="asignaturaBorrar.php?id=<?php echo $data["id"];?>">Eliminar</a>
 
 					</td>
 					
@@ -86,7 +86,6 @@
 			</table>
 		 </div>		
 		</section>
-	
 	
 	
 	<!-- InstanceEndEditable -->

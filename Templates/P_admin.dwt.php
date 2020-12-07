@@ -21,9 +21,10 @@
 					<li><a href="../home.php" >Inicio</a></li>
 					<li><a href="../alumnos.php">Alumnos</a></li>
 					<li><a href="../maestros.php">Maestros</a></li>
+					<li><a href="../asignatura.php">Asignaturas</a></li>
 					<li><a href="#">Clases</a></li>
 					<li><a href="#">Asistencias</a></li>
-					<li><a href="#">Salas</a></li>
+					<li><a href="../salas.php">Salas</a></li>
 					<li><a href="#">Inventarios</a></li>
 					<li><a href="#">Salir</a></li>
 				</ul>
