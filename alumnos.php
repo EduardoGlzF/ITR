@@ -40,6 +40,9 @@
 			<!--Boton para agregar usuarios -->
 			<a href="/alumnosReg.php" class="btn_new">Agregar usuario</a>
 			<br>
+						
+			<a href="reportes/reporte1.php" class="btn_rep">Reporte</a>
+			
 			
 		<div class="tableCont">	
 			<table>
