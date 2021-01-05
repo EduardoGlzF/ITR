@@ -7,10 +7,9 @@
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 		<link rel="stylesheet" href="Estilos/menu.css"><!--Estilos para sideBar-->
-		<script src="https://kit.fontawesome.com/a076d05399.js"></script><!--Estilos de slideBar -->
-		<link rel="stylesheet" href="Estilos/Formulario.css">
-	    <?php include'Conexiones/editAsignatura.php'; ?>
-
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script><!--Estilos de slideBar -->
+	<link rel="stylesheet" href="Estilos/Formulario.css">
+	    <?php include'Conexiones/editClase.php'; ?>
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -34,33 +33,43 @@
 	</div>	
 	<!-- InstanceBeginEditable name="body" -->
 	
-			<section id="container">
+		<section id="container">
 			  <div class="form_reg">	
 				
-				<h1 id="titulo">Actualizar asignatura</h1> <!-- Encabezado-->
+				<h1 id="titulo">Actualizar alumno</h1> <!-- Encabezado-->
 				<hr>
 				
 				<div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div> 
 				<!-- Formulario -->
 					<form action="" method="post">
 						
-		<!--Texto-->	<label for="id">ID</label> 
-		<!--Textbox-->	<input type="text" name="id" id="id" placeholder="ID"
-							  value="<?php echo $id?>">
+		<!--Texto-->	<label for="clase">Clase</label> 
+		<!--Textbox-->	<input type="text" name="clase" id="clase" placeholder="Nombre de la clase"
+							  value="<?php echo $clase?>">
 						
 						
-						<label for="nombre">Nombre</label>
-						<input type="text" name="nombre" id="nombre" placeholder="Nombre completo"
-							    value="<?php echo $nombre?>">	
+						<label for="maestro">Maestro</label>
+						<input type="text" name="maestro" id="maestro" placeholder="Nombre de maestro"
+							    value="<?php echo $maestro?>">	
 						
-						<label for="descripcion">Descripción</label>
-						<input type="text" name="descripcion" id="descripcion" placeholder="Descripción"
-							    value="<?php echo $descripcion?>">						
+						<label for="materia">Materia</label>
+						<input type="text" name="materia" id="materia" placeholder="Materia"
+							    value="<?php echo $materia?>">						
 						
-						<label for="creditos">Creditos</label>
-						<input type="text" name="creditos" id="creditos" placeholder="Creditos"
-							    value="<?php echo $creditos ?>">	
+						<label for="sala">Sala</label>
+						<input type="text" name="sala" id="sala" placeholder="Sala"
+							    value="<?php echo $sala?>">	
 
+						
+						<label for="hrInicio">Inicia</label>
+						<input type="text" name="hrInicio" id="hrInicio" placeholder="Hora de inicio"
+							    value="<?php echo $hrInicio?>">
+						
+						
+						<label for="hrFinaliza">Finaliza</label>
+						<input type="text" name="hrFinaliza" id="hrFinaliza" placeholder="Hora de finalización"
+							    value="<?php echo $hrFinaliza?>">	
+						
 						<br>
 						<br>
 
@@ -69,8 +78,6 @@
 					</form>		
 				</div>
 			</section>
-	
-	
 	<!-- InstanceEndEditable -->
 
 	

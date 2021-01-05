@@ -9,7 +9,6 @@
 		<link rel="stylesheet" href="Estilos/menu.css"><!--Estilos para sideBar-->
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script><!--Estilos de slideBar -->
 		<link rel="stylesheet" href="Estilos/tablas.css"><!--Estilos de tabla-->
-
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -32,14 +31,13 @@
 				</ul>
 	</div>	
 	<!-- InstanceBeginEditable name="body" -->
-		
-	<!--Tabla de alumnos-->
-		<section id="container">
+	
+			<section id="container">
 			<br>
-			<h1>Lista de alumnos</h1>
+			<h1>Lista de clases</h1>
 			<br>
 			<!--Boton para agregar usuarios -->
-			<a href="/alumnosReg.php" class="btn_new">Agregar usuario</a>
+			<a href="/alumnosReg.php" class="btn_new">Agregar clase</a>
 			<br>
 						
 			<a href="reportes/reporte1.php" class="btn_rep">Reporte</a>
@@ -49,20 +47,21 @@
 			<table>
 				<!--encabezados de tabla-->
 				<tr>
-					<th class="sticky">Numero Ctrl</th>
-					<th class="sticky">Nombre</th>
-					<th class="sticky">Carrera</th>
-					<th class="sticky">Teléfono</th>
-					<th class="sticky">Email</th>
-					<th class="sticky">Semestre</th>
-					<th class="sticky">Edad</th>
+					<th class="sticky">Id</th>
+					<th class="sticky">Maestro</th>
+					<th class="sticky">Materia</th>
+					<th class="sticky">Sala</th>
+					<th class="sticky">Inicio</th>
+					<th class="sticky">Finaliza</th>
 					<th class="sticky">Acciones</th>
+
+				
 				</tr>
 			<?php
 				//Conexion a la BD y consulta de alumnos
 				require 'Conexiones/conBD.php'; 
 				
-				$query = mysqli_query($conn, "SELECT * FROM alumnos");
+				$query = mysqli_query($conn, "SELECT cla.idClase, ma.nombre, cla.materia, cla.sala, cla.hrInicio, cla.hrFinaliza FROM clases as cla, maestros as ma WHERE ma.cedula=cla.cedula");
 				
 				$result = mysqli_num_rows($query);
 				if($result>0){
@@ -71,17 +70,16 @@
 			 ?>
 				<!-- Estructura de tabla-->
 				<tr>
-					<td><?php echo $data["numCtrl"];?></td>
+					<td><?php echo $data["idClase"];?></td>
 					<td><?php echo $data["nombre"];?></td>
-					<td><?php echo $data["carrera"];?></td>
-					<td><?php echo $data["telefono"];?></td>
-					<td><?php echo $data["email"];?></td>
-					<td><?php echo $data["semestre"];?></td>
-					<td><?php echo $data["edad"];?></td>
+					<td><?php echo $data["materia"];?></td>
+					<td><?php echo $data["sala"];?></td>
+					<td><?php echo $data["hrInicio"];?></td>
+					<td><?php echo $data["hrFinaliza"];?></td>
 					<td>
-					<a class="link_edit" href="alumnosEdit.php?numCtrl=<?php echo $data["numCtrl"];?>">Editar</a> | 
+					<a class="link_edit" href="clasesEdit.php?idClase=<?php echo $data["idClase"];?>">Editar</a> | 
 						 
-					<a class="link_delete" href="alumnosBorrar.php?id=<?php echo $data["numCtrl"];?>">Eliminar</a>
+					<a class="link_delete" href="clasesEdit.php?idClases=<?php echo $data["idClase"];?>">Eliminar</a>
 
 					</td>
 					
@@ -93,7 +91,6 @@
 				
 			</table>
 		 </div>		
-		</section>
 	
 	<!-- InstanceEndEditable -->
 

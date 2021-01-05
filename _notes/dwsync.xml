@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
 <file name="index.php" server="tecreytics.com" local="132499739928229723" remote="132499956000000000" Dst="1" />
-<file name="home.php" server="tecreytics.com" local="132506611130715105" remote="132506827200000000" Dst="1" />
-<file name="alumnos.php" server="tecreytics.com" local="132506611207221478" remote="132506826600000000" Dst="1" />
-<file name="alumnosReg.php" server="tecreytics.com" local="132506611222073075" remote="132506826600000000" Dst="1" />
-<file name="alumnosEdit.php" server="tecreytics.com" local="132506611133833319" remote="132506826600000000" Dst="1" />
-<file name="alumnosBorrar.php" server="tecreytics.com" local="132506611133653443" remote="132506826600000000" Dst="1" />
-<file name="maestros.php" server="tecreytics.com" local="132506611131804473" remote="132506827200000000" Dst="1" />
-<file name="maestrosReg.php" server="tecreytics.com" local="132506611131164861" remote="132506827200000000" Dst="1" />
-<file name="maestrosBorrar.php" server="tecreytics.com" local="132506611131494667" remote="132506827200000000" Dst="1" />
-<file name="maestrosEdit.php" server="tecreytics.com" local="132506611132184262" remote="132506827200000000" Dst="1" />
-<file name="salas.php" server="tecreytics.com" local="132506611133453543" remote="132506827200000000" Dst="1" />
-<file name="salasBorrar.php" server="tecreytics.com" local="132506611132574034" remote="132506827200000000" Dst="1" />
-<file name="salasEdit.php" server="tecreytics.com" local="132506611133003784" remote="132506827200000000" Dst="1" />
-<file name="asignatura.php" server="tecreytics.com" local="132508242335762412" remote="132508458000000000" Dst="1" />
-<file name="asignaturaReg.php" server="tecreytics.com" local="132508237724225010" remote="132508453800000000" Dst="1" />
-<file name="asignaturaBorrar.php" server="tecreytics.com" local="132508229566082302" remote="132508445400000000" Dst="1" />
-<file name="asignaturaEdit.php" server="tecreytics.com" local="132508244764350980" remote="132508460400000000" Dst="1" />
+<file name="home.php" server="tecreytics.com" local="132527104786204289" remote="132527322000000000" Dst="1" />
+<file name="alumnos.php" server="tecreytics.com" local="132542790981829197" remote="132543006600000000" Dst="1" />
+<file name="alumnosReg.php" server="tecreytics.com" local="132527104785266615" remote="132527321400000000" Dst="1" />
+<file name="alumnosEdit.php" server="tecreytics.com" local="132542796702750475" remote="132543012000000000" Dst="1" />
+<file name="alumnosBorrar.php" server="tecreytics.com" local="132527104784798265" remote="132527321400000000" Dst="1" />
+<file name="maestros.php" server="tecreytics.com" local="132527104786516528" remote="132527322000000000" Dst="1" />
+<file name="maestrosReg.php" server="tecreytics.com" local="132527104787141714" remote="132527322000000000" Dst="1" />
+<file name="maestrosBorrar.php" server="tecreytics.com" local="132527104786829022" remote="132527322000000000" Dst="1" />
+<file name="maestrosEdit.php" server="tecreytics.com" local="132527104786829022" remote="132527322000000000" Dst="1" />
+<file name="salas.php" server="tecreytics.com" local="132527104787453972" remote="132527322000000000" Dst="1" />
+<file name="salasBorrar.php" server="tecreytics.com" local="132527104787766454" remote="132527322000000000" Dst="1" />
+<file name="salasEdit.php" server="tecreytics.com" local="132527104787922492" remote="132527322000000000" Dst="1" />
+<file name="asignatura.php" server="tecreytics.com" local="132527104788412594" remote="132527321400000000" Dst="1" />
+<file name="asignaturaReg.php" server="tecreytics.com" local="132527104786047834" remote="132527321400000000" Dst="1" />
+<file name="asignaturaBorrar.php" server="tecreytics.com" local="132527104785735569" remote="132527321400000000" Dst="1" />
+<file name="asignaturaEdit.php" server="tecreytics.com" local="132527104788725502" remote="132527321400000000" Dst="1" />
+<file name="clases.php" server="tecreytics.com" local="132542770579166060" remote="132542986200000000" Dst="1" />
+<file name="plantilla.php" server="tecreytics.com" local="132518199748724080" remote="132527322000000000" Dst="1" />
+<file name="clasesEdit.php" server="tecreytics.com" local="132542769142165447" remote="132542984400000000" Dst="1" />
 </dwsync>

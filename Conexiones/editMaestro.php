@@ -68,7 +68,7 @@
 				$nombre = $data['nombre'];
 				$email= $data['email'];
 				$user=$data['user'];
-				$password=$data['password'];
+				$password=md5($data['password']);
 				
 				
 			}

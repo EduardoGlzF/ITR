@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
 <file name="loginCon.php" server="tecreytics.com" local="132499734641237105" remote="132499950600000000" Dst="1" />
-<file name="conBD.php" server="tecreytics.com" local="132500993105698674" remote="132501208800000000" Dst="1" />
+<file name="conBD.php" server="tecreytics.com" local="132500993105698674" remote="132518418000000000" Dst="1" />
 <file name="alumnoAdd.php" server="tecreytics.com" local="132500218706657554" remote="132500434200000000" Dst="1" />
 <file name="conBd.php" server="tecreytics.com" local="132500993105698674" remote="132501319800000000" Dst="1" />
 <file name="maestroAdd.php" server="tecreytics.com" local="132501423869375038" remote="132503301600000000" Dst="1" />
-<file name="editMaestro.php" server="tecreytics.com" local="132502311777860340" remote="132502527600000000" Dst="1" />
+<file name="editMaestro.php" server="tecreytics.com" local="132518224539581282" remote="132518440200000000" Dst="1" />
 <file name="editSala.php" server="tecreytics.com" local="132502977620733469" remote="132503301600000000" Dst="1" />
 <file name="asignaturaAdd.php" server="tecreytics.com" local="132506605921219409" remote="132506826000000000" Dst="1" />
 <file name="editAsignatura.php" server="tecreytics.com" local="132508257869895205" remote="132508473600000000" Dst="1" />
+<file name="editAlumno.php" server="tecreytics.com" local="132542799887195438" remote="132543015600000000" Dst="1" />
+<file name="editClase.php" server="tecreytics.com" local="132542769171117128" remote="132542984400000000" Dst="1" />
 </dwsync>
