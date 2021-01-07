@@ -43,14 +43,14 @@
 				<!-- Formulario -->
 					<form action="" method="post">
 						
-		<!--Texto-->	<label for="clase">Clase</label> 
-		<!--Textbox-->	<input type="text" name="clase" id="clase" placeholder="Nombre de la clase"
-							  value="<?php echo $clase?>">
+		<!--Texto-->	<label for="idClase">Clase</label> 
+		<!--Textbox-->	<input type="text" name="idClase" id="idClase" placeholder="Nombre de la clase"
+							  value="<?php echo $idClase?>">
 						
 						
-						<label for="maestro">Maestro</label>
-						<input type="text" name="maestro" id="maestro" placeholder="Nombre de maestro"
-							    value="<?php echo $maestro?>">	
+						<label for="cedula">Maestro</label>
+						<input type="text" name="cedula" id="cedula" placeholder="Nombre de maestro"
+							    value="<?php echo $cedula?>">	
 						
 						<label for="materia">Materia</label>
 						<input type="text" name="materia" id="materia" placeholder="Materia"

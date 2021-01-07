@@ -20,7 +20,7 @@
 			$semestre=$_POST['semestre'];
 			$edad=$_POST['edad'];
 			
-			/*Validar que no exista el usuario
+			/*Validar que no exista el usuario    
 			$query= mysqli_query($conn,"SELECT * FROM alumnos WHERE numCtrl ='$numCtrl'");
 			$res=mysqli_fetch_array($query);
 			

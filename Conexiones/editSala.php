@@ -12,38 +12,41 @@
 			
 			//Recibir valores e instanciar variables
 			$id= $_POST['id'];
-			$ubicacion= $_POST['ubicacion'];
+			$ubicacion= $_POST['ubicacion'];		
 			
 			
-			//Validar que no exista el usuario
-			$query= mysqli_query($conn,"SELECT * FROM sala WHERE id ='$id'");
-			$res=mysqli_fetch_array($query);
-			
-			
-			if($res>0){
-				$alert='<p class="msg_error">El usuario ya existe</p>';
-			}else{
-				$query_insert=mysqli_query($conn,"INSERT INTO sala(id,ubicacion)VALUES('$id','$ubicacion')");
 				
-				if($query_insert){
-					$alert='<p class="msg_save"> Usuario creado</p>';
+				$query_insert = mysqli_query($conn, "UPDATE sala SET id='$id', ubicacion='$ubicacion' WHERE id = '$id' ");
+		
+		if($query_insert){
+					header('Location: ./salas.php');				
 				}else{
 					$alert='<p class="msg_error">Error al registrar</p>';
-				}
-			}
-			
-		}
+									}
+					}
 	}
-	
-
-
-
 //Buscar si alumno existe
-
 		if(empty($_GET['id'])){
-			header('Location: ../salasEdit.php');
+ 
+			header('Location: ./salas.php');
 		}
-		
+//Extraer datos de alumnos desde la BD
+		include('Conexiones/conBD.php');
+		$id = $_GET['id'];
+		$sql= mysqli_query($conn,"SELECT * FROM sala WHERE id = '$id'");
 
+		$result_sql=mysqli_num_rows($sql);
 
+		if($result_sql==0){
+			header('Location: ./salas.php');
+		}else{
+//Almacenar valores del array de consulta en variables 			
+			while($data=mysqli_fetch_array($sql)){
+				
+				$id = $data['id'];
+				$ubicacion = $data['ubicacion'];
+				
+			}
+		}
+	?>
 	?>

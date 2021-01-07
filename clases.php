@@ -79,7 +79,7 @@
 					<td>
 					<a class="link_edit" href="clasesEdit.php?idClase=<?php echo $data["idClase"];?>">Editar</a> | 
 						 
-					<a class="link_delete" href="clasesEdit.php?idClases=<?php echo $data["idClase"];?>">Eliminar</a>
+					<a class="link_delete" href="clasesBorrar.php?idClase=<?php echo $data["idClase"];?>">Eliminar</a>
 
 					</td>
 					
