@@ -1,3 +1,10 @@
+<?php 
+session_start();
+
+	if(!isset($_SESSION['id'])){
+		header("Location: index.php");
+	}
+?>
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/P_admin.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -28,7 +35,7 @@
 					<li><a href="#">Asistencias</a></li>
 					<li><a href="salas.php">Salas</a></li>
 					<li><a href="#">Inventarios</a></li>
-					<li><a href="#">Salir</a></li>
+					<li><a href="salir.php">Salir</a></li>
 				</ul>
 	</div>	
 	<!-- InstanceBeginEditable name="body" -->

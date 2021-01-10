@@ -26,7 +26,7 @@
 					<li><a href="#">Asistencias</a></li>
 					<li><a href="../salas.php">Salas</a></li>
 					<li><a href="#">Inventarios</a></li>
-					<li><a href="#">Salir</a></li>
+					<li><a href="../salir.php">Salir</a></li>
 				</ul>
 	</div>	
 	<!-- TemplateBeginEditable name="body" -->

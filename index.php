@@ -21,9 +21,9 @@
 <body>
 	<!-- InstanceBeginEditable name="body" -->
 	<div id="logos">
-	<img src="/Imagenes/itrLogo.jpg", id="itrLogo",height="60", width="80",>
+	<img src="./Imagenes/itrLogo.jpg", id="itrLogo",height="60", width="80",>
 	
-	<img src="/Imagenes/tecnmLogo.png", id="tecnmLogo", height="80", width="110">
+	<img src="./Imagenes/tecnmLogo.png", id="tecnmLogo", height="80", width="110">
 	</div>
 	<center>
 		<div id="loginDiv", >
@@ -44,7 +44,7 @@
 		</div>
 		
 		</form>
-	</center>
+	</center> 
 	
 	
 	

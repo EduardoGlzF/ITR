@@ -17,7 +17,7 @@
 			$telefono=$_POST['telefono'];
 			$email=$_POST['email'];
 			$semestre=$_POST['semestre'];
-			$edad=$_POST['edad'];
+			
 			
 			//Validar que no exista el usuario
 			$query= mysqli_query($conn,"SELECT * FROM alumnos WHERE numCtrl ='$numCtrl'");
@@ -28,7 +28,7 @@
 				$alert='<p class="msg_error">El usuario ya existe</p>';
 			}else{
 				
-				$query_insert = mysqli_query($conn, "INSERT INTO alumnos (numctrl,nombre,carrera,telefono,email,semestre,edad)VALUES('$numCtrl','$nombre','$carrera','$telefono','$email','$semestre','$edad')");
+				$query_insert = mysqli_query($conn, "INSERT INTO alumnos (numctrl,nombre,telefono,email,semestre,id_carr)VALUES('$numCtrl','$nombre','$telefono','$email','$semestre','$carrera')");
 				
 				/*$query_insert=mysqli_query($conn,"INSERT INTO alumnos(numCtrl,nombre,carrera,telefono,email,semestre,edad)VALUES('$numCtrl','$nombre',			'$carrera',$telefono','$email','$semestre','$edad')");*/
 				

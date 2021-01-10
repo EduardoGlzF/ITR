@@ -1,3 +1,10 @@
+<?php 
+session_start();
+
+	if(!isset($_SESSION['id'])){
+		header("Location: index.php");
+	}
+?>
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/P_admin.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -9,7 +16,11 @@
 		<link rel="stylesheet" href="Estilos/menu.css"><!--Estilos para sideBar-->
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script><!--Estilos de slideBar -->
 	<link rel="stylesheet" href="Estilos/Formulario.css">
-	    <?php include'Conexiones/editAlumno.php'; ?>
+	    <?php include'Conexiones/editAlumno.php'; 
+			include('Conexiones/conBD.php');
+			$sql = "SELECT * FROM carreras";
+			$resultado = $conn->query($sql);	
+		?>
 
 <!-- InstanceEndEditable -->
 </head>
@@ -29,7 +40,7 @@
 					<li><a href="#">Asistencias</a></li>
 					<li><a href="salas.php">Salas</a></li>
 					<li><a href="#">Inventarios</a></li>
-					<li><a href="#">Salir</a></li>
+					<li><a href="salir.php">Salir</a></li>
 				</ul>
 	</div>	
 	<!-- InstanceBeginEditable name="body" -->
@@ -54,8 +65,12 @@
 							    value="<?php echo $nombre?>">	
 						
 						<label for="carrera">Carrera</label>
-						<input type="text" name="carrera" id="carrera" placeholder="Carrera"
-							    value="<?php echo $carrera?>">						
+						<select class="custom-select" id="carrera" name="carrera" aria-label="city_name" required>
+								<option value="">-Selecione una carrera-</option>
+								<?php foreach($resultado as $opcion1): ?>
+										<option value="<?php echo $opcion1['id_carr']; ?>" <?php if (!(strcmp($carrera, htmlentities( $opcion1['id_carr'], ENT_COMPAT, 'iso-8859-1')))) {echo "SELECTED";} ?> ><?php echo $opcion1['carrera']; ?></option>
+							 	<?php endforeach ?>
+						</select>					
 						
 						<label for="telefono">Teléfono</label>
 						<input type="text" name="telefono" id="telefono" placeholder="Teléfono"
@@ -72,9 +87,7 @@
 							    value="<?php echo $semestre?>">	
 						
 						
-						<label for="edad">Edad</label>
-						<input type="text" name="edad" id="edad" placeholder="Edad"
-							    value="<?php echo $edad?>">
+						
 						<br>
 						<br>
 

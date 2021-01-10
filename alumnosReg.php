@@ -1,3 +1,14 @@
+<?php 
+	require 'Conexiones/conBD.php';
+	session_start();
+	 
+	if(!isset($_SESSION['id'])){
+		header("Location: index.php");
+	}
+
+	$sql = "SELECT * FROM carreras";
+	$resultado = $conn->query($sql);
+?>
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/P_admin.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -28,7 +39,7 @@
 					<li><a href="#">Asistencias</a></li>
 					<li><a href="salas.php">Salas</a></li>
 					<li><a href="#">Inventarios</a></li>
-					<li><a href="#">Salir</a></li>
+					<li><a href="salir.php">Salir</a></li>
 				</ul>
 	</div>	
 	<!-- InstanceBeginEditable name="body" -->
@@ -54,7 +65,12 @@
 						<input type="text" name="nombre" id="nombre" placeholder="Nombre completo">	
 						
 						<label for="carrera">Carrera</label>
-						<input type="text" name="carrera" id="carrera" placeholder="Carrera">						
+						<select id="carrera" name="carrera" aria-label="carrera" required>
+								<option value=""> -Selecione una carrera-</option>
+								<?php foreach($resultado as $opcion1): ?>
+										<option value="<?php echo $opcion1['id_carr']; ?>"><?php echo $opcion1['carrera']; ?></option>
+								<?php endforeach ?>
+						</select>					
 						
 						<label for="telefono">Teléfono</label>
 						<input type="text" name="telefono" id="telefono" placeholder="Teléfono">	
@@ -68,8 +84,7 @@
 						<input type="text" name="semestre" id="semestre" placeholder="Semestre">	
 						
 						
-						<label for="edad">Edad</label>
-						<input type="text" name="edad" id="edad" placeholder="Edad">
+						
 						<br>
 						<br>
 

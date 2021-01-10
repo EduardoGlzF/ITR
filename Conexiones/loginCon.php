@@ -15,6 +15,8 @@ $res=mysqli_query($conn,$consulta);
 $fila=mysqli_num_rows($res);
 //Validar usuario y contraseña de admin
 if($fila){
+	$row = $res->fetch_assoc();
+	$_SESSION['id'] = $row['id'];
 	header("Location: ../home.php");
  }
 else{

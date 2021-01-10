@@ -1,3 +1,11 @@
+<?php 
+session_start();
+
+	if(!isset($_SESSION['id'])){
+		header("Location: index.php");
+	}
+	
+?>
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/P_admin.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -28,7 +36,7 @@
 					<li><a href="#">Asistencias</a></li>
 					<li><a href="salas.php">Salas</a></li>
 					<li><a href="#">Inventarios</a></li>
-					<li><a href="#">Salir</a></li>
+					<li><a href="salir.php">Salir</a></li>
 				</ul>
 	</div>	
 	<!-- InstanceBeginEditable name="body" -->
@@ -39,10 +47,10 @@
 			<h1>Lista de alumnos</h1>
 			<br>
 			<!--Boton para agregar usuarios -->
-			<a href="/alumnosReg.php" class="btn_new">Agregar usuario</a>
+			<a href="./alumnosReg.php" class="btn_new">Agregar usuario</a>
 			<br>
 						
-			<a href="reportes/reporte1.php" class="btn_rep">Reporte</a>
+			<a href="./reportes/reporte1.php" class="btn_rep">Reporte</a>
 			
 			
 		<div class="tableCont">	
@@ -54,13 +62,15 @@
 					<th class="sticky">Carrera</th>
 					<th class="sticky">Teléfono</th>
 					<th class="sticky">Email</th>
-					<th class="sticky">Semestre</th>
-					<th class="sticky">Edad</th>
+					<th class="sticky">Semestre</th>					
 					<th class="sticky">Acciones</th>
 				</tr>
 			<?php
 				//Conexion a la BD y consulta de alumnos
 				require 'Conexiones/conBD.php'; 
+				
+				$sql = "SELECT * FROM carreras";
+				$resultado4 = $conn->query($sql);
 				
 				$query = mysqli_query($conn, "SELECT * FROM alumnos");
 				
@@ -73,11 +83,17 @@
 				<tr>
 					<td><?php echo $data["numCtrl"];?></td>
 					<td><?php echo $data["nombre"];?></td>
-					<td><?php echo $data["carrera"];?></td>
+					<td><?php
+							$idcarr1 = $data['id_carr'];
+							$sql = "SELECT * FROM carreras where id_carr='$idcarr1'";
+							$rescarr = $conn->query($sql);
+							while($row3 = $rescarr->fetch_assoc()) {
+									echo $row3['carrera'];
+							}
+					?></td>
 					<td><?php echo $data["telefono"];?></td>
 					<td><?php echo $data["email"];?></td>
-					<td><?php echo $data["semestre"];?></td>
-					<td><?php echo $data["edad"];?></td>
+					<td><?php echo $data["semestre"];?></td>					
 					<td>
 					<a class="link_edit" href="alumnosEdit.php?numCtrl=<?php echo $data["numCtrl"];?>">Editar</a> | 
 						 

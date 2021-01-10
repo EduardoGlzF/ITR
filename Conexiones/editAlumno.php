@@ -18,7 +18,7 @@
 			$telefono=$_POST['telefono'];
 			$email=$_POST['email'];
 			$semestre=$_POST['semestre'];
-			$edad=$_POST['edad'];
+			
 			
 			/*Validar que no exista el usuario    
 			$query= mysqli_query($conn,"SELECT * FROM alumnos WHERE numCtrl ='$numCtrl'");
@@ -31,7 +31,7 @@
 				
 		
 				
-			$query_insert = mysqli_query($conn, "UPDATE alumnos SET numCtrl='$numCtrl', nombre='$nombre', carrera='$carrera',telefono='$telefono', email= '$email', semestre='$semestre', edad='$edad' WHERE numCtrl = '$numCtrl' ");
+			$query_insert = mysqli_query($conn, "UPDATE alumnos SET numCtrl='$numCtrl', nombre='$nombre', id_carr='$carrera',telefono='$telefono', email= '$email', semestre='$semestre' WHERE numCtrl = '$numCtrl' ");
 		
 				if($query_insert){
 					header('Location: ./alumnos.php');				
@@ -61,11 +61,11 @@
 				
 				$numCtrl = $data['numCtrl'];
 				$nombre = $data['nombre'];
-				$carrera= $data['carrera'];
+				$carrera= $data['id_carr'];
 				$telefono=$data['telefono'];
 				$email=$data['email'];
 				$semestre=$data['semestre'];
-				$edad=$data['edad'];
+				
 				
 				
 			}
