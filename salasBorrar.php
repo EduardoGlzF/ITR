@@ -20,6 +20,7 @@ session_start();
 <!-- InstanceEndEditable -->
 </head>
 <body>
+	
 	<input type="checkbox" id="check">
 	<label for="check">
 		<i class="fas fa-bars" id="btnMenu"></i>
@@ -35,7 +36,7 @@ session_start();
 					<li><a href="#">Asistencias</a></li>
 					<li><a href="salas.php">Salas</a></li>
 					<li><a href="#">Inventarios</a></li>
-					<li><a href="#">Salir</a></li>
+					<li><a href="salir.php">Salir</a></li>
 				</ul>
 	</div>	
 	<!-- InstanceBeginEditable name="body" -->

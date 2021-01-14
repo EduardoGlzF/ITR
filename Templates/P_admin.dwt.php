@@ -6,11 +6,13 @@
 <title>Laboratorio de redes</title>
 <!-- TemplateEndEditable -->
 <!-- TemplateBeginEditable name="head" -->
-		<link rel="stylesheet" href="../Estilos/menu.css">
+		<link rel="stylesheet" href="../Estilos/menu.css" >
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		
 <!-- TemplateEndEditable -->
 </head>
 <body>
+	
 	<input type="checkbox" id="check">
 	<label for="check">
 		<i class="fas fa-bars" id="btnMenu"></i>

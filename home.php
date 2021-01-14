@@ -20,6 +20,7 @@ session_start();
 <!-- InstanceEndEditable -->
 </head>
 <body>
+	
 	<input type="checkbox" id="check">
 	<label for="check">
 		<i class="fas fa-bars" id="btnMenu"></i>
