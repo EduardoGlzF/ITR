@@ -47,6 +47,7 @@ session_start();
 			<!--Boton para agregar usuarios -->
 			<a href="/asignaturaReg.php" class="btn_new">Agregar asignatura</a>
 			<br>
+			<a href="./reportes/rep_asig.php" class="btn_rep">Reporte</a>
 			
 		<div class="tableCont">	
 			<table>

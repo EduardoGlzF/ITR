@@ -48,7 +48,7 @@ session_start();
 			<!--Boton para agregar usuarios -->
 			<a href="/salasBorrar.php" class="btn_new">Agregar usuario</a>
 			<br>
-			
+			<a href="./reportes/rep_salas.php" class="btn_rep">Reporte</a>
 		<div class="tableCont">	
 			<table>
 				<!--encabezados de tabla-->

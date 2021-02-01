@@ -48,7 +48,7 @@ session_start();
 			<a href="/alumnosReg.php" class="btn_new">Agregar clase</a>
 			<br>
 						
-			<a href="reportes/reporte1.php" class="btn_rep">Reporte</a>
+			<a href="reportes/rep_clases.php" class="btn_rep">Reporte</a>
 			
 			
 		<div class="tableCont">	
