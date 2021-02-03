@@ -50,7 +50,7 @@ session_start();
 						
 			<a href="reportes/rep_clases.php" class="btn_rep">Reporte</a>
 			
-			
+			 
 		<div class="tableCont">	
 			<table>
 				<!--encabezados de tabla-->
