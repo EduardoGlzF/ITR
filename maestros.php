@@ -47,7 +47,7 @@ session_start();
 			<!--Boton para agregar usuarios -->
 			<a href="/maestrosReg.php" class="btn_new">Agregar usuario</a>
 			<br>
-			<a href="/reportes/rep_maestros.php" class="btn_rep">Reporte</a>
+			<a href="reportes/rep_maestros.php" class="btn_rep">Reporte</a>
 			 
 		<div class="tableCont">	
 			<table>
